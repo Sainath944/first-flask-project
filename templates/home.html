@@ -12,19 +12,29 @@
       #banner{
         height: 360px;
         object-fit:cover;
+        margin-bottom:16px;
       }
     </style>
   </head>
   <body>
+    <div>
+      {% include 'nav.html' %}
+    </div>
+    <img class="img-fluid" id="banner" src ="static/banner.jpg" height=400 width=100% >
     <div class="container">
     <h1 class="text-center mt-2 mb-4">{{company_name}} CAREERS</h1>
-    <img class="img-fluid" id="banner" src ="https://9e2ea630-84d4-484f-b6ca-218b624bd6c8-00-2fe3x3j4df09o.pike.replit.dev/static/banner.jpg" height=400 width=1000 >
     <h2 class="text-center mt-2 mb-4">
       about sns
     </h2>
+      <div class="row">
+        <div class="col-md-9">
     <p class="lead">
-      Quisque ornare felis eu quam egestas condimentum. Proin magna nunc, auctor sit amet lacus sed, posuere tristique nunc. Maecenas tempor sagittis dui, at euismod tellus suscipit non. Cras quam arcu, pretium vel convallis eu, venenatis lobortis sapien. Donec mauris eros, fringilla nec commodo sed, aliquam at tortor. Vivamus cursus tortor eget nisl interdum malesuada. In mauris lectus, aliquet elementum felis id, elementum pellentesque eros. Sed tincidunt sem a diam dignissim lobortis. Pellentesque a congue felis, vitae sollicitudin purus. Nunc viverra sit amet dolor ut dignissim. Interdum et malesuada fames ac ante ipsum primis in faucibus.
+      Quisque ornare felis eu quam egestas condimentum. Proin magna nunc, auctor sit amet lacus sed, posuere tristique nunc. Maecenas tempor sagittis dui, at euismod tellus suscipit non. Cras quam arcu, pretium vel convallis eu, venenatis lobortis sapien. Donec mauris eros, fringilla nec commodo sed, aliquam at tortor. Vivamus cursus tortor eget nisl interdum malesuada. In mauris lectus, aliquet elementum felis id, elementum pellentesque eros. Sed tincidunt sem a diam dignissim lobortis. Pellentesque a congue felis, vitae sollicitudin purus. Nunc viverra sit amet dolor ut dignissim. Interdum et malesuada fames ac ante ipsum primis in faucibus.aliquet elementum felis id, elementum pellentesque eros. Sed tincidunt sem a diam dignissim lobortis. Pellentesque a congue felis, vitae sollicitudin purus. Nunc viverra sit amet dolor ut dignissim. Interdum et malesuada fames ac ante ipsum primis in faucibus.
     </p>
+        </div>
+        <div class="col-3 d-none d-md-block">
+        <img class="img-fluid" id="banner" src ="/static/people.avif">
+      </div>
     <h2 class="text-center">
       open positions
     </h2>
@@ -37,5 +47,6 @@
     <button class="btn btn-primary btn-lg">Contact Us</button>
         </div>
     </div>
+    {% include 'footer.html' %}
   </body>
 </html>
